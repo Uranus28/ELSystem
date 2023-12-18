@@ -1,0 +1,3057 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/yuriy/ontologies/2023/11/ELSystemOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/yuriy/ontologies/2023/11/ELSystemOntology">
+    <Prefix name="" IRI="http://www.semanticweb.org/yuriy/ontologies/2023/11/ELSystemOntology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AbandonedCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Answer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AverageTestTermRate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnrolledCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FinishedCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lecture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lesson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ListOfReferences"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MatchingAnsewer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Module"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultipleAnswer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PassingTestAttemp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Practice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PracticeTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Question"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SingleAnswer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubjectArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Task"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teacher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Term"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TestAttempTermRate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TestElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TestVariant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TextAnswer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrueOrFalseAnswer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Answer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Course"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasTerm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsTerm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Lecture"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Lesson"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Module"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Practice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#PracticeTask"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Question"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Reference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Task"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Term"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Test"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TestVariant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCourse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTerm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_answer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_creator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_known_term"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_lecture"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_lesson"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_module"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_practice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_practice_task"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_question"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_reference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_student"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_task"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_teacher"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_test"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_unknown_term"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_variant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCourse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTerm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_answer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_creator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_known_term"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_lecture"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_lesson"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_module_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_practice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_practice_task"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_question"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_reference_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_student"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_task"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_teacher"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_test"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_unknown_term"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_variant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#part_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#previousTerm"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AnswerTemplate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Course"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Lecture"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Module"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PracticeTask"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#QuestionTemplate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Rate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Reference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Term"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Test"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TestAttemp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TestElement"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Variant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#answerTekst"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#courseDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#courseName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dateAndTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#firstName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hours"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lastName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lectureNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lemma"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#link"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#moduleNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#percentOfComplition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#percentOfTestComplition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#questioNname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#questionTekst"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rateValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rightAnswer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#role"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#successOfTheAttemp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#taskNuber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#termName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#testDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#testName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#timeSpent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#variantNumber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Answer1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Answer10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Answer2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Answer3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Answer4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Answer5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Answer6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Answer7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Answer8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Answer9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Course1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Course2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lecture1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lecture2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lecture3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lecture4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LessonC1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LessonC2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LessonC3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MatchingQuestion1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MatchingQuestion2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ModuleK1_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ModuleK1_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ModuleK2_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MultipleAnswerQuestion1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MultipleAnswerQuestion2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Practice1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Practice2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Practice3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Practice4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PracticeTask1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PracticeTask2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PracticeTask3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PracticeTask4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reference1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reference2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reference3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reference4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reference5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reference6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SingleAnswerQuestion1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SingleAnswerQuestion2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Task1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Task2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Task3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Task4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Task5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Task6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Task7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Task8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Teacher1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Teacher2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Test1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Test1V1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Test1V2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Test2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Test2V1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Test3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Test3V1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Test3V2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TextAnswer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TextAnswerQuestion1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TrueOrFalseQuestion1"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AbandonedCourse"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Answer"/>
+        <Class IRI="#Task"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AverageTestTermRate"/>
+        <Class IRI="#Rate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnrolledCourse"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FinishedCourse"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MatchingAnsewer"/>
+        <Class IRI="#Question"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultipleAnswer"/>
+        <Class IRI="#Question"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PracticeTask"/>
+        <Class IRI="#Practice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Question"/>
+        <Class IRI="#Task"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SingleAnswer"/>
+        <Class IRI="#Question"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Teacher"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Term"/>
+        <Class IRI="#SubjectArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TestAttempTermRate"/>
+        <Class IRI="#Rate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TestElement"/>
+        <Class IRI="#PassingTestAttemp"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TestVariant"/>
+        <Class IRI="#Test"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TextAnswer"/>
+        <Class IRI="#Question"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrueOrFalseAnswer"/>
+        <Class IRI="#Question"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AbandonedCourse"/>
+        <Class IRI="#EnrolledCourse"/>
+        <Class IRI="#FinishedCourse"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AverageTestTermRate"/>
+        <Class IRI="#TestAttempTermRate"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Lecture"/>
+        <Class IRI="#ListOfReferences"/>
+        <Class IRI="#Practice"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Lesson"/>
+        <Class IRI="#Test"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Answer"/>
+        <NamedIndividual IRI="#Answer1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Answer"/>
+        <NamedIndividual IRI="#Answer10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Answer"/>
+        <NamedIndividual IRI="#Answer2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Answer"/>
+        <NamedIndividual IRI="#Answer3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Answer"/>
+        <NamedIndividual IRI="#Answer4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Answer"/>
+        <NamedIndividual IRI="#Answer5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Answer"/>
+        <NamedIndividual IRI="#Answer6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Answer"/>
+        <NamedIndividual IRI="#Answer7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Answer"/>
+        <NamedIndividual IRI="#Answer8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Answer"/>
+        <NamedIndividual IRI="#Answer9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Course1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Course2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lecture"/>
+        <NamedIndividual IRI="#Lecture1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lecture"/>
+        <NamedIndividual IRI="#Lecture2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lecture"/>
+        <NamedIndividual IRI="#Lecture3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lecture"/>
+        <NamedIndividual IRI="#Lecture4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lesson"/>
+        <NamedIndividual IRI="#LessonC1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lesson"/>
+        <NamedIndividual IRI="#LessonC2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lesson"/>
+        <NamedIndividual IRI="#LessonC3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MatchingAnsewer"/>
+        <NamedIndividual IRI="#MatchingQuestion1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MatchingAnsewer"/>
+        <NamedIndividual IRI="#MatchingQuestion2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Module"/>
+        <NamedIndividual IRI="#ModuleK1_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Module"/>
+        <NamedIndividual IRI="#ModuleK1_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Module"/>
+        <NamedIndividual IRI="#ModuleK2_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MultipleAnswer"/>
+        <NamedIndividual IRI="#MultipleAnswerQuestion1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MultipleAnswer"/>
+        <NamedIndividual IRI="#MultipleAnswerQuestion2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Practice"/>
+        <NamedIndividual IRI="#Practice1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Practice"/>
+        <NamedIndividual IRI="#Practice2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Practice"/>
+        <NamedIndividual IRI="#Practice3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Practice"/>
+        <NamedIndividual IRI="#Practice4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PracticeTask"/>
+        <NamedIndividual IRI="#PracticeTask1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PracticeTask"/>
+        <NamedIndividual IRI="#PracticeTask2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PracticeTask"/>
+        <NamedIndividual IRI="#PracticeTask3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PracticeTask"/>
+        <NamedIndividual IRI="#PracticeTask4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ListOfReferences"/>
+        <NamedIndividual IRI="#Reference1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ListOfReferences"/>
+        <NamedIndividual IRI="#Reference2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ListOfReferences"/>
+        <NamedIndividual IRI="#Reference3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ListOfReferences"/>
+        <NamedIndividual IRI="#Reference4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ListOfReferences"/>
+        <NamedIndividual IRI="#Reference5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ListOfReferences"/>
+        <NamedIndividual IRI="#Reference6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SingleAnswer"/>
+        <NamedIndividual IRI="#SingleAnswerQuestion1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SingleAnswer"/>
+        <NamedIndividual IRI="#SingleAnswerQuestion2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Student1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Student2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Student3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Student4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Task"/>
+        <NamedIndividual IRI="#Task1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Task"/>
+        <NamedIndividual IRI="#Task2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Task"/>
+        <NamedIndividual IRI="#Task3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Task"/>
+        <NamedIndividual IRI="#Task4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Task"/>
+        <NamedIndividual IRI="#Task5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Task"/>
+        <NamedIndividual IRI="#Task6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Task"/>
+        <NamedIndividual IRI="#Task7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Task"/>
+        <NamedIndividual IRI="#Task8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#Teacher1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Teacher"/>
+        <NamedIndividual IRI="#Teacher2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Test"/>
+        <NamedIndividual IRI="#Test1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TestVariant"/>
+        <NamedIndividual IRI="#Test1V1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TestVariant"/>
+        <NamedIndividual IRI="#Test1V2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Test"/>
+        <NamedIndividual IRI="#Test2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TestVariant"/>
+        <NamedIndividual IRI="#Test2V1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Test"/>
+        <NamedIndividual IRI="#Test3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TestVariant"/>
+        <NamedIndividual IRI="#Test3V1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TestVariant"/>
+        <NamedIndividual IRI="#Test3V2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Answer"/>
+        <NamedIndividual IRI="#TextAnswer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TextAnswer"/>
+        <NamedIndividual IRI="#TextAnswerQuestion1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TrueOrFalseAnswer"/>
+        <NamedIndividual IRI="#TrueOrFalseQuestion1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#Answer1"/>
+        <NamedIndividual IRI="#Task1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#Answer10"/>
+        <NamedIndividual IRI="#Task3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#Answer10"/>
+        <NamedIndividual IRI="#Task8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#Answer2"/>
+        <NamedIndividual IRI="#Task1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#Answer2"/>
+        <NamedIndividual IRI="#Task2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#Answer2"/>
+        <NamedIndividual IRI="#Task3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#Answer3"/>
+        <NamedIndividual IRI="#Task1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#Answer3"/>
+        <NamedIndividual IRI="#Task2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#Answer4"/>
+        <NamedIndividual IRI="#Task1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#Answer5"/>
+        <NamedIndividual IRI="#Task2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#Answer5"/>
+        <NamedIndividual IRI="#Task4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#Answer5"/>
+        <NamedIndividual IRI="#Task6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#Answer6"/>
+        <NamedIndividual IRI="#Task3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#Answer6"/>
+        <NamedIndividual IRI="#Task4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#Answer6"/>
+        <NamedIndividual IRI="#Task6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#Answer7"/>
+        <NamedIndividual IRI="#Task4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#Answer7"/>
+        <NamedIndividual IRI="#Task5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#Answer8"/>
+        <NamedIndividual IRI="#Task5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#Answer9"/>
+        <NamedIndividual IRI="#Task8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_creator"/>
+        <NamedIndividual IRI="#Course1"/>
+        <NamedIndividual IRI="#Teacher2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_module"/>
+        <NamedIndividual IRI="#Course1"/>
+        <NamedIndividual IRI="#ModuleK1_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_module"/>
+        <NamedIndividual IRI="#Course1"/>
+        <NamedIndividual IRI="#ModuleK1_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_teacher"/>
+        <NamedIndividual IRI="#Course1"/>
+        <NamedIndividual IRI="#Teacher1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_teacher"/>
+        <NamedIndividual IRI="#Course1"/>
+        <NamedIndividual IRI="#Teacher2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_creator"/>
+        <NamedIndividual IRI="#Course2"/>
+        <NamedIndividual IRI="#Teacher1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_module"/>
+        <NamedIndividual IRI="#Course2"/>
+        <NamedIndividual IRI="#ModuleK2_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_teacher"/>
+        <NamedIndividual IRI="#Course2"/>
+        <NamedIndividual IRI="#Teacher1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_lecture"/>
+        <NamedIndividual IRI="#Lecture1"/>
+        <NamedIndividual IRI="#LessonC1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_lecture"/>
+        <NamedIndividual IRI="#Lecture2"/>
+        <NamedIndividual IRI="#LessonC2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_lecture"/>
+        <NamedIndividual IRI="#Lecture3"/>
+        <NamedIndividual IRI="#LessonC3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_lecture"/>
+        <NamedIndividual IRI="#Lecture4"/>
+        <NamedIndividual IRI="#LessonC3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_lecture"/>
+        <NamedIndividual IRI="#LessonC1"/>
+        <NamedIndividual IRI="#Lecture1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_practice"/>
+        <NamedIndividual IRI="#LessonC1"/>
+        <NamedIndividual IRI="#Practice1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_reference"/>
+        <NamedIndividual IRI="#LessonC1"/>
+        <NamedIndividual IRI="#Reference1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_reference"/>
+        <NamedIndividual IRI="#LessonC1"/>
+        <NamedIndividual IRI="#Reference2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_reference"/>
+        <NamedIndividual IRI="#LessonC1"/>
+        <NamedIndividual IRI="#Reference6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_lesson"/>
+        <NamedIndividual IRI="#LessonC1"/>
+        <NamedIndividual IRI="#ModuleK1_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_lecture"/>
+        <NamedIndividual IRI="#LessonC2"/>
+        <NamedIndividual IRI="#Lecture2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_practice"/>
+        <NamedIndividual IRI="#LessonC2"/>
+        <NamedIndividual IRI="#Practice2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_practice"/>
+        <NamedIndividual IRI="#LessonC2"/>
+        <NamedIndividual IRI="#Practice3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_reference"/>
+        <NamedIndividual IRI="#LessonC2"/>
+        <NamedIndividual IRI="#Reference3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_reference"/>
+        <NamedIndividual IRI="#LessonC2"/>
+        <NamedIndividual IRI="#Reference4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_lesson"/>
+        <NamedIndividual IRI="#LessonC2"/>
+        <NamedIndividual IRI="#ModuleK1_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_lecture"/>
+        <NamedIndividual IRI="#LessonC3"/>
+        <NamedIndividual IRI="#Lecture3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_lecture"/>
+        <NamedIndividual IRI="#LessonC3"/>
+        <NamedIndividual IRI="#Lecture4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_practice"/>
+        <NamedIndividual IRI="#LessonC3"/>
+        <NamedIndividual IRI="#Practice4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_reference"/>
+        <NamedIndividual IRI="#LessonC3"/>
+        <NamedIndividual IRI="#Reference4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_reference"/>
+        <NamedIndividual IRI="#LessonC3"/>
+        <NamedIndividual IRI="#Reference5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_reference"/>
+        <NamedIndividual IRI="#LessonC3"/>
+        <NamedIndividual IRI="#Reference6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_lesson"/>
+        <NamedIndividual IRI="#LessonC3"/>
+        <NamedIndividual IRI="#ModuleK2_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_question"/>
+        <NamedIndividual IRI="#MatchingQuestion1"/>
+        <NamedIndividual IRI="#Task1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_question"/>
+        <NamedIndividual IRI="#MatchingQuestion2"/>
+        <NamedIndividual IRI="#Task2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_lesson"/>
+        <NamedIndividual IRI="#ModuleK1_1"/>
+        <NamedIndividual IRI="#LessonC1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_test"/>
+        <NamedIndividual IRI="#ModuleK1_1"/>
+        <NamedIndividual IRI="#Test1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_module_of"/>
+        <NamedIndividual IRI="#ModuleK1_1"/>
+        <NamedIndividual IRI="#Course1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_lesson"/>
+        <NamedIndividual IRI="#ModuleK1_2"/>
+        <NamedIndividual IRI="#LessonC2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_test"/>
+        <NamedIndividual IRI="#ModuleK1_2"/>
+        <NamedIndividual IRI="#Test2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_module_of"/>
+        <NamedIndividual IRI="#ModuleK1_2"/>
+        <NamedIndividual IRI="#Course1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_lesson"/>
+        <NamedIndividual IRI="#ModuleK2_1"/>
+        <NamedIndividual IRI="#LessonC3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_test"/>
+        <NamedIndividual IRI="#ModuleK2_1"/>
+        <NamedIndividual IRI="#Test2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_test"/>
+        <NamedIndividual IRI="#ModuleK2_1"/>
+        <NamedIndividual IRI="#Test3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_module_of"/>
+        <NamedIndividual IRI="#ModuleK2_1"/>
+        <NamedIndividual IRI="#Course2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_question"/>
+        <NamedIndividual IRI="#MultipleAnswerQuestion1"/>
+        <NamedIndividual IRI="#Task3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_question"/>
+        <NamedIndividual IRI="#MultipleAnswerQuestion2"/>
+        <NamedIndividual IRI="#Task4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_practice_task"/>
+        <NamedIndividual IRI="#Practice1"/>
+        <NamedIndividual IRI="#PracticeTask1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_practice"/>
+        <NamedIndividual IRI="#Practice1"/>
+        <NamedIndividual IRI="#LessonC1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_practice_task"/>
+        <NamedIndividual IRI="#Practice2"/>
+        <NamedIndividual IRI="#PracticeTask2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_practice"/>
+        <NamedIndividual IRI="#Practice2"/>
+        <NamedIndividual IRI="#LessonC2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_practice_task"/>
+        <NamedIndividual IRI="#Practice3"/>
+        <NamedIndividual IRI="#PracticeTask3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_practice"/>
+        <NamedIndividual IRI="#Practice3"/>
+        <NamedIndividual IRI="#LessonC2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_practice_task"/>
+        <NamedIndividual IRI="#Practice4"/>
+        <NamedIndividual IRI="#PracticeTask4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_practice"/>
+        <NamedIndividual IRI="#Practice4"/>
+        <NamedIndividual IRI="#LessonC3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_practice_task"/>
+        <NamedIndividual IRI="#PracticeTask1"/>
+        <NamedIndividual IRI="#Practice1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_practice_task"/>
+        <NamedIndividual IRI="#PracticeTask2"/>
+        <NamedIndividual IRI="#Practice2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_practice_task"/>
+        <NamedIndividual IRI="#PracticeTask3"/>
+        <NamedIndividual IRI="#Practice3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_practice_task"/>
+        <NamedIndividual IRI="#PracticeTask4"/>
+        <NamedIndividual IRI="#Practice4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_reference_of"/>
+        <NamedIndividual IRI="#Reference1"/>
+        <NamedIndividual IRI="#LessonC1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_reference_of"/>
+        <NamedIndividual IRI="#Reference1"/>
+        <NamedIndividual IRI="#LessonC2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_reference_of"/>
+        <NamedIndividual IRI="#Reference2"/>
+        <NamedIndividual IRI="#LessonC1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_reference_of"/>
+        <NamedIndividual IRI="#Reference3"/>
+        <NamedIndividual IRI="#LessonC2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_reference_of"/>
+        <NamedIndividual IRI="#Reference4"/>
+        <NamedIndividual IRI="#LessonC2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_reference_of"/>
+        <NamedIndividual IRI="#Reference4"/>
+        <NamedIndividual IRI="#LessonC3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_reference_of"/>
+        <NamedIndividual IRI="#Reference5"/>
+        <NamedIndividual IRI="#LessonC3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_reference_of"/>
+        <NamedIndividual IRI="#Reference6"/>
+        <NamedIndividual IRI="#LessonC1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_reference_of"/>
+        <NamedIndividual IRI="#Reference6"/>
+        <NamedIndividual IRI="#LessonC3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_question"/>
+        <NamedIndividual IRI="#SingleAnswerQuestion1"/>
+        <NamedIndividual IRI="#Task5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_question"/>
+        <NamedIndividual IRI="#SingleAnswerQuestion2"/>
+        <NamedIndividual IRI="#Task6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task1"/>
+        <NamedIndividual IRI="#Answer1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task1"/>
+        <NamedIndividual IRI="#Answer2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task1"/>
+        <NamedIndividual IRI="#Answer3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task1"/>
+        <NamedIndividual IRI="#Answer4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_question"/>
+        <NamedIndividual IRI="#Task1"/>
+        <NamedIndividual IRI="#MatchingQuestion1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_task"/>
+        <NamedIndividual IRI="#Task1"/>
+        <NamedIndividual IRI="#Test1V1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_task"/>
+        <NamedIndividual IRI="#Task1"/>
+        <NamedIndividual IRI="#Test1V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_task"/>
+        <NamedIndividual IRI="#Task1"/>
+        <NamedIndividual IRI="#Test3V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task2"/>
+        <NamedIndividual IRI="#Answer2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task2"/>
+        <NamedIndividual IRI="#Answer3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task2"/>
+        <NamedIndividual IRI="#Answer5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_question"/>
+        <NamedIndividual IRI="#Task2"/>
+        <NamedIndividual IRI="#MatchingQuestion2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_task"/>
+        <NamedIndividual IRI="#Task2"/>
+        <NamedIndividual IRI="#Test1V1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task3"/>
+        <NamedIndividual IRI="#Answer10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task3"/>
+        <NamedIndividual IRI="#Answer2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task3"/>
+        <NamedIndividual IRI="#Answer6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_question"/>
+        <NamedIndividual IRI="#Task3"/>
+        <NamedIndividual IRI="#MultipleAnswerQuestion1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_task"/>
+        <NamedIndividual IRI="#Task3"/>
+        <NamedIndividual IRI="#Test1V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_task"/>
+        <NamedIndividual IRI="#Task3"/>
+        <NamedIndividual IRI="#Test3V1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task4"/>
+        <NamedIndividual IRI="#Answer5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task4"/>
+        <NamedIndividual IRI="#Answer6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task4"/>
+        <NamedIndividual IRI="#Answer7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_question"/>
+        <NamedIndividual IRI="#Task4"/>
+        <NamedIndividual IRI="#MultipleAnswerQuestion2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_task"/>
+        <NamedIndividual IRI="#Task4"/>
+        <NamedIndividual IRI="#Test1V1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_task"/>
+        <NamedIndividual IRI="#Task4"/>
+        <NamedIndividual IRI="#Test3V1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task5"/>
+        <NamedIndividual IRI="#Answer7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task5"/>
+        <NamedIndividual IRI="#Answer8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_question"/>
+        <NamedIndividual IRI="#Task5"/>
+        <NamedIndividual IRI="#SingleAnswerQuestion1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_task"/>
+        <NamedIndividual IRI="#Task5"/>
+        <NamedIndividual IRI="#Test1V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_task"/>
+        <NamedIndividual IRI="#Task5"/>
+        <NamedIndividual IRI="#Test3V1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task6"/>
+        <NamedIndividual IRI="#Answer5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task6"/>
+        <NamedIndividual IRI="#Answer6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_question"/>
+        <NamedIndividual IRI="#Task6"/>
+        <NamedIndividual IRI="#SingleAnswerQuestion2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_task"/>
+        <NamedIndividual IRI="#Task6"/>
+        <NamedIndividual IRI="#Test2V1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_task"/>
+        <NamedIndividual IRI="#Task6"/>
+        <NamedIndividual IRI="#Test3V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task7"/>
+        <NamedIndividual IRI="#TextAnswer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_question"/>
+        <NamedIndividual IRI="#Task7"/>
+        <NamedIndividual IRI="#TextAnswerQuestion1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_task"/>
+        <NamedIndividual IRI="#Task7"/>
+        <NamedIndividual IRI="#Test2V1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task8"/>
+        <NamedIndividual IRI="#Answer10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_answer"/>
+        <NamedIndividual IRI="#Task8"/>
+        <NamedIndividual IRI="#Answer9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_question"/>
+        <NamedIndividual IRI="#Task8"/>
+        <NamedIndividual IRI="#TrueOrFalseQuestion1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_task"/>
+        <NamedIndividual IRI="#Task8"/>
+        <NamedIndividual IRI="#Test2V1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_creator"/>
+        <NamedIndividual IRI="#Teacher1"/>
+        <NamedIndividual IRI="#Course2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_teacher"/>
+        <NamedIndividual IRI="#Teacher1"/>
+        <NamedIndividual IRI="#Course1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_teacher"/>
+        <NamedIndividual IRI="#Teacher1"/>
+        <NamedIndividual IRI="#Course2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_creator"/>
+        <NamedIndividual IRI="#Teacher2"/>
+        <NamedIndividual IRI="#Course1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_teacher"/>
+        <NamedIndividual IRI="#Teacher2"/>
+        <NamedIndividual IRI="#Course1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_variant"/>
+        <NamedIndividual IRI="#Test1"/>
+        <NamedIndividual IRI="#Test1V1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_variant"/>
+        <NamedIndividual IRI="#Test1"/>
+        <NamedIndividual IRI="#Test1V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_test"/>
+        <NamedIndividual IRI="#Test1"/>
+        <NamedIndividual IRI="#ModuleK1_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_task"/>
+        <NamedIndividual IRI="#Test1V1"/>
+        <NamedIndividual IRI="#Task1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_task"/>
+        <NamedIndividual IRI="#Test1V1"/>
+        <NamedIndividual IRI="#Task2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_task"/>
+        <NamedIndividual IRI="#Test1V1"/>
+        <NamedIndividual IRI="#Task4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_variant"/>
+        <NamedIndividual IRI="#Test1V1"/>
+        <NamedIndividual IRI="#Test1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_task"/>
+        <NamedIndividual IRI="#Test1V2"/>
+        <NamedIndividual IRI="#Task1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_task"/>
+        <NamedIndividual IRI="#Test1V2"/>
+        <NamedIndividual IRI="#Task3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_task"/>
+        <NamedIndividual IRI="#Test1V2"/>
+        <NamedIndividual IRI="#Task5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_variant"/>
+        <NamedIndividual IRI="#Test1V2"/>
+        <NamedIndividual IRI="#Test1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_variant"/>
+        <NamedIndividual IRI="#Test2"/>
+        <NamedIndividual IRI="#Test2V1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_test"/>
+        <NamedIndividual IRI="#Test2"/>
+        <NamedIndividual IRI="#ModuleK1_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_test"/>
+        <NamedIndividual IRI="#Test2"/>
+        <NamedIndividual IRI="#ModuleK2_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_task"/>
+        <NamedIndividual IRI="#Test2V1"/>
+        <NamedIndividual IRI="#Task6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_task"/>
+        <NamedIndividual IRI="#Test2V1"/>
+        <NamedIndividual IRI="#Task7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_task"/>
+        <NamedIndividual IRI="#Test2V1"/>
+        <NamedIndividual IRI="#Task8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_variant"/>
+        <NamedIndividual IRI="#Test2V1"/>
+        <NamedIndividual IRI="#Test2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_variant"/>
+        <NamedIndividual IRI="#Test3"/>
+        <NamedIndividual IRI="#Test3V1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_variant"/>
+        <NamedIndividual IRI="#Test3"/>
+        <NamedIndividual IRI="#Test3V2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_test"/>
+        <NamedIndividual IRI="#Test3"/>
+        <NamedIndividual IRI="#ModuleK2_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_task"/>
+        <NamedIndividual IRI="#Test3V1"/>
+        <NamedIndividual IRI="#Task3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_task"/>
+        <NamedIndividual IRI="#Test3V1"/>
+        <NamedIndividual IRI="#Task4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_task"/>
+        <NamedIndividual IRI="#Test3V1"/>
+        <NamedIndividual IRI="#Task5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_variant"/>
+        <NamedIndividual IRI="#Test3V1"/>
+        <NamedIndividual IRI="#Test3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_task"/>
+        <NamedIndividual IRI="#Test3V2"/>
+        <NamedIndividual IRI="#Task1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_task"/>
+        <NamedIndividual IRI="#Test3V2"/>
+        <NamedIndividual IRI="#Task6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_variant"/>
+        <NamedIndividual IRI="#Test3V2"/>
+        <NamedIndividual IRI="#Test3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_answer"/>
+        <NamedIndividual IRI="#TextAnswer"/>
+        <NamedIndividual IRI="#Task7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_question"/>
+        <NamedIndividual IRI="#TextAnswerQuestion1"/>
+        <NamedIndividual IRI="#Task7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_question"/>
+        <NamedIndividual IRI="#TrueOrFalseQuestion1"/>
+        <NamedIndividual IRI="#Task8"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#answerTekst"/>
+        <NamedIndividual IRI="#Answer1"/>
+        <Literal>ответ1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#answerTekst"/>
+        <NamedIndividual IRI="#Answer10"/>
+        <Literal>нет</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#answerTekst"/>
+        <NamedIndividual IRI="#Answer2"/>
+        <Literal>ответ2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#answerTekst"/>
+        <NamedIndividual IRI="#Answer3"/>
+        <Literal>ответ3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#answerTekst"/>
+        <NamedIndividual IRI="#Answer4"/>
+        <Literal>ответ4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#answerTekst"/>
+        <NamedIndividual IRI="#Answer5"/>
+        <Literal>ответ5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#answerTekst"/>
+        <NamedIndividual IRI="#Answer6"/>
+        <Literal>ответ6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#answerTekst"/>
+        <NamedIndividual IRI="#Answer7"/>
+        <Literal>ответ7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#answerTekst"/>
+        <NamedIndividual IRI="#Answer8"/>
+        <Literal>ответ8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#answerTekst"/>
+        <NamedIndividual IRI="#Answer9"/>
+        <Literal>да</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#courseDescription"/>
+        <NamedIndividual IRI="#Course1"/>
+        <Literal>это курс1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#courseName"/>
+        <NamedIndividual IRI="#Course1"/>
+        <Literal>Курс1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#courseDescription"/>
+        <NamedIndividual IRI="#Course2"/>
+        <Literal>Это курс2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#courseName"/>
+        <NamedIndividual IRI="#Course2"/>
+        <Literal>Курс2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hours"/>
+        <NamedIndividual IRI="#Lecture1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lectureNumber"/>
+        <NamedIndividual IRI="#Lecture1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hours"/>
+        <NamedIndividual IRI="#Lecture2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lectureNumber"/>
+        <NamedIndividual IRI="#Lecture2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hours"/>
+        <NamedIndividual IRI="#Lecture3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lectureNumber"/>
+        <NamedIndividual IRI="#Lecture3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hours"/>
+        <NamedIndividual IRI="#Lecture4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lectureNumber"/>
+        <NamedIndividual IRI="#Lecture4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#questioNname"/>
+        <NamedIndividual IRI="#MatchingQuestion1"/>
+        <Literal>имяВопроса1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#questionTekst"/>
+        <NamedIndividual IRI="#MatchingQuestion1"/>
+        <Literal>ТекстВопроса1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#questioNname"/>
+        <NamedIndividual IRI="#MatchingQuestion2"/>
+        <Literal>имяВопроса2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#questionTekst"/>
+        <NamedIndividual IRI="#MatchingQuestion2"/>
+        <Literal>ТекстВопроса2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#moduleNumber"/>
+        <NamedIndividual IRI="#ModuleK1_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#moduleNumber"/>
+        <NamedIndividual IRI="#ModuleK1_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#moduleNumber"/>
+        <NamedIndividual IRI="#ModuleK2_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#questioNname"/>
+        <NamedIndividual IRI="#MultipleAnswerQuestion1"/>
+        <Literal>имяВопроса3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#questioNname"/>
+        <NamedIndividual IRI="#MultipleAnswerQuestion1"/>
+        <Literal>текстВопроса3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#questioNname"/>
+        <NamedIndividual IRI="#MultipleAnswerQuestion2"/>
+        <Literal>имяВопроса4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#questioNname"/>
+        <NamedIndividual IRI="#MultipleAnswerQuestion2"/>
+        <Literal>текстВопроса4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#taskNuber"/>
+        <NamedIndividual IRI="#PracticeTask1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#taskNuber"/>
+        <NamedIndividual IRI="#PracticeTask2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#taskNuber"/>
+        <NamedIndividual IRI="#PracticeTask3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#taskNuber"/>
+        <NamedIndividual IRI="#PracticeTask4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#link"/>
+        <NamedIndividual IRI="#Reference1"/>
+        <Literal>link1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#link"/>
+        <NamedIndividual IRI="#Reference2"/>
+        <Literal>link2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#link"/>
+        <NamedIndividual IRI="#Reference3"/>
+        <Literal>link3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#link"/>
+        <NamedIndividual IRI="#Reference4"/>
+        <Literal>link4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#link"/>
+        <NamedIndividual IRI="#Reference5"/>
+        <Literal>link5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#link"/>
+        <NamedIndividual IRI="#Reference6"/>
+        <Literal>link6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#questioNname"/>
+        <NamedIndividual IRI="#SingleAnswerQuestion1"/>
+        <Literal>имяВопроса5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#questioNname"/>
+        <NamedIndividual IRI="#SingleAnswerQuestion1"/>
+        <Literal>текстВопроса5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#questioNname"/>
+        <NamedIndividual IRI="#SingleAnswerQuestion2"/>
+        <Literal>имяВопроса8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#questioNname"/>
+        <NamedIndividual IRI="#SingleAnswerQuestion2"/>
+        <Literal>текстВопроса6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#Student1"/>
+        <Literal>email3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#Student1"/>
+        <Literal>Name3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id"/>
+        <NamedIndividual IRI="#Student1"/>
+        <Literal>kjfbtyik3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#Student1"/>
+        <Literal>Surname3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#role"/>
+        <NamedIndividual IRI="#Student1"/>
+        <Literal>student</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#Student2"/>
+        <Literal>email5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#Student2"/>
+        <Literal>Name6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id"/>
+        <NamedIndividual IRI="#Student2"/>
+        <Literal>dkhjtqlm3sada</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#Student2"/>
+        <Literal>Surname3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#role"/>
+        <NamedIndividual IRI="#Student2"/>
+        <Literal>student</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#Student3"/>
+        <Literal>email6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#Student3"/>
+        <Literal>Name4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id"/>
+        <NamedIndividual IRI="#Student3"/>
+        <Literal>pjbcgyudtteg7ewq</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#Student3"/>
+        <Literal>Surname5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#role"/>
+        <NamedIndividual IRI="#Student3"/>
+        <Literal>student</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#Student4"/>
+        <Literal>email7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#Student4"/>
+        <Literal>Name5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id"/>
+        <NamedIndividual IRI="#Student4"/>
+        <Literal>uiwiqjebjoljdb32nu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#Student4"/>
+        <Literal>Surname4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#role"/>
+        <NamedIndividual IRI="#Student4"/>
+        <Literal>student</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#Teacher1"/>
+        <Literal>email1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#Teacher1"/>
+        <Literal>name1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id"/>
+        <NamedIndividual IRI="#Teacher1"/>
+        <Literal>1lkqwnek1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#Teacher1"/>
+        <Literal>Surname1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#role"/>
+        <NamedIndividual IRI="#Teacher1"/>
+        <Literal>teacher</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#email"/>
+        <NamedIndividual IRI="#Teacher2"/>
+        <Literal>email2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#firstName"/>
+        <NamedIndividual IRI="#Teacher2"/>
+        <Literal>Name1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id"/>
+        <NamedIndividual IRI="#Teacher2"/>
+        <Literal>kjdfbdjbi1q</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lastName"/>
+        <NamedIndividual IRI="#Teacher2"/>
+        <Literal>Surname2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#role"/>
+        <NamedIndividual IRI="#Teacher2"/>
+        <Literal>teacher</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#answerTekst"/>
+        <NamedIndividual IRI="#TextAnswer"/>
+        <Literal></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#questioNname"/>
+        <NamedIndividual IRI="#TextAnswerQuestion1"/>
+        <Literal>текстВопроса7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#questionTekst"/>
+        <NamedIndividual IRI="#TextAnswerQuestion1"/>
+        <Literal>имяВопроса7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#questioNname"/>
+        <NamedIndividual IRI="#TrueOrFalseQuestion1"/>
+        <Literal>текстВопроса8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#questionTekst"/>
+        <NamedIndividual IRI="#TrueOrFalseQuestion1"/>
+        <Literal>имяВопроса8</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Answer"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Course"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasTerm"/>
+        <ObjectProperty IRI="#Term"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsTerm"/>
+        <ObjectProperty IRI="#Term"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Lecture"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Lesson"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Practice"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#PracticeTask"/>
+        <ObjectProperty IRI="#Practice"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Question"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Reference"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Test"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TestVariant"/>
+        <ObjectProperty IRI="#Test"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCourse"/>
+        <ObjectProperty IRI="#Course"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTerm"/>
+        <ObjectProperty IRI="#Term"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_answer"/>
+        <ObjectProperty IRI="#Answer"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_creator"/>
+        <ObjectProperty IRI="#hasCourse"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_known_term"/>
+        <ObjectProperty IRI="#HasTerm"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_lecture"/>
+        <ObjectProperty IRI="#Lecture"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_lesson"/>
+        <ObjectProperty IRI="#Lesson"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_module"/>
+        <ObjectProperty IRI="#Module"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_practice"/>
+        <ObjectProperty IRI="#Practice"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_practice_task"/>
+        <ObjectProperty IRI="#PracticeTask"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_question"/>
+        <ObjectProperty IRI="#Question"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_reference"/>
+        <ObjectProperty IRI="#Reference"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_student"/>
+        <ObjectProperty IRI="#hasCourse"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_task"/>
+        <ObjectProperty IRI="#Task"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_teacher"/>
+        <ObjectProperty IRI="#hasCourse"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_test"/>
+        <ObjectProperty IRI="#Test"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_unknown_term"/>
+        <ObjectProperty IRI="#HasTerm"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_variant"/>
+        <ObjectProperty IRI="#TestVariant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCourse"/>
+        <ObjectProperty IRI="#Course"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isTerm"/>
+        <ObjectProperty IRI="#Term"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_answer"/>
+        <ObjectProperty IRI="#Answer"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_creator"/>
+        <ObjectProperty IRI="#isCourse"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_known_term"/>
+        <ObjectProperty IRI="#IsTerm"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_lecture"/>
+        <ObjectProperty IRI="#Lecture"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_lesson"/>
+        <ObjectProperty IRI="#Lesson"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_module_of"/>
+        <ObjectProperty IRI="#Module"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_practice"/>
+        <ObjectProperty IRI="#Practice"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_practice_task"/>
+        <ObjectProperty IRI="#PracticeTask"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_question"/>
+        <ObjectProperty IRI="#Question"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_reference_of"/>
+        <ObjectProperty IRI="#Reference"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_student"/>
+        <ObjectProperty IRI="#isCourse"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_task"/>
+        <ObjectProperty IRI="#Task"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_teacher"/>
+        <ObjectProperty IRI="#isCourse"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_test"/>
+        <ObjectProperty IRI="#Test"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_unknown_term"/>
+        <ObjectProperty IRI="#IsTerm"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_variant"/>
+        <ObjectProperty IRI="#TestVariant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#part_of"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#previousTerm"/>
+        <ObjectProperty IRI="#Term"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasTerm"/>
+        <ObjectProperty IRI="#isTerm"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_answer"/>
+        <ObjectProperty IRI="#is_answer"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_creator"/>
+        <ObjectProperty IRI="#is_creator"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_known_term"/>
+        <ObjectProperty IRI="#is_known_term"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_lecture"/>
+        <ObjectProperty IRI="#is_lecture"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_lesson"/>
+        <ObjectProperty IRI="#is_lesson"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_module"/>
+        <ObjectProperty IRI="#is_module_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_practice"/>
+        <ObjectProperty IRI="#is_practice"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_practice_task"/>
+        <ObjectProperty IRI="#is_practice_task"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_question"/>
+        <ObjectProperty IRI="#is_question"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_reference"/>
+        <ObjectProperty IRI="#is_reference_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_student"/>
+        <ObjectProperty IRI="#is_student"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_task"/>
+        <ObjectProperty IRI="#is_task"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_teacher"/>
+        <ObjectProperty IRI="#is_teacher"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_test"/>
+        <ObjectProperty IRI="#is_test"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_unknown_term"/>
+        <ObjectProperty IRI="#is_unknown_term"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_variant"/>
+        <ObjectProperty IRI="#is_variant"/>
+    </InverseObjectProperties>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#previousTerm"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTerm"/>
+        <Class IRI="#SubjectArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_answer"/>
+        <Class IRI="#Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_creator"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_lecture"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_lesson"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_module"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_practice"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_practice_task"/>
+        <Class IRI="#Practice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_question"/>
+        <Class IRI="#Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_reference"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_student"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_task"/>
+        <Class IRI="#TestVariant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_teacher"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_test"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_variant"/>
+        <Class IRI="#Test"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_known_term"/>
+        <Class IRI="#Term"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_unknown_term"/>
+        <Class IRI="#Term"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTerm"/>
+        <Class IRI="#Term"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_answer"/>
+        <Class IRI="#Answer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_creator"/>
+        <Class IRI="#Teacher"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_lecture"/>
+        <Class IRI="#Lecture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_lesson"/>
+        <Class IRI="#Lesson"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_module"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_practice"/>
+        <Class IRI="#Practice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_practice_task"/>
+        <Class IRI="#PracticeTask"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_question"/>
+        <Class IRI="#MatchingAnsewer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_question"/>
+        <Class IRI="#MultipleAnswer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_question"/>
+        <Class IRI="#SingleAnswer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_question"/>
+        <Class IRI="#TextAnswer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_question"/>
+        <Class IRI="#TrueOrFalseAnswer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_reference"/>
+        <Class IRI="#ListOfReferences"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_student"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_task"/>
+        <Class IRI="#Task"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_teacher"/>
+        <Class IRI="#Teacher"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_test"/>
+        <Class IRI="#Test"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_variant"/>
+        <Class IRI="#TestVariant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_known_term"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_unknown_term"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AnswerTemplate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Course"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Lecture"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Module"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#PracticeTask"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#QuestionTemplate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Rate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Reference"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Term"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Test"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TestAttemp"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TestElement"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#User"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Variant"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#answerTekst"/>
+        <DataProperty IRI="#AnswerTemplate"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#courseDescription"/>
+        <DataProperty IRI="#Course"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#courseName"/>
+        <DataProperty IRI="#Course"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#dateAndTime"/>
+        <DataProperty IRI="#TestAttemp"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#email"/>
+        <DataProperty IRI="#User"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#firstName"/>
+        <DataProperty IRI="#User"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hours"/>
+        <DataProperty IRI="#Lecture"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#id"/>
+        <DataProperty IRI="#User"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#lastName"/>
+        <DataProperty IRI="#User"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#lectureNumber"/>
+        <DataProperty IRI="#Lecture"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#lemma"/>
+        <DataProperty IRI="#Term"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#link"/>
+        <DataProperty IRI="#Reference"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#moduleNumber"/>
+        <DataProperty IRI="#Module"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#percentOfComplition"/>
+        <DataProperty IRI="#Course"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#percentOfTestComplition"/>
+        <DataProperty IRI="#TestAttemp"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#questioNname"/>
+        <DataProperty IRI="#QuestionTemplate"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#questionTekst"/>
+        <DataProperty IRI="#QuestionTemplate"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#rateValue"/>
+        <DataProperty IRI="#Rate"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#rightAnswer"/>
+        <DataProperty IRI="#TestElement"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#role"/>
+        <DataProperty IRI="#User"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#successOfTheAttemp"/>
+        <DataProperty IRI="#TestAttemp"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#taskNuber"/>
+        <DataProperty IRI="#PracticeTask"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#termName"/>
+        <DataProperty IRI="#Term"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#testDescription"/>
+        <DataProperty IRI="#Test"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#testName"/>
+        <DataProperty IRI="#Test"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#timeSpent"/>
+        <DataProperty IRI="#TestAttemp"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#variantNumber"/>
+        <DataProperty IRI="#Variant"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#courseDescription"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#courseName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hours"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#lectureNumber"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#lemma"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#moduleNumber"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#taskNuber"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#termName"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#answerTekst"/>
+        <Class IRI="#Answer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#courseDescription"/>
+        <Class IRI="#Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#courseName"/>
+        <Class IRI="#Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dateAndTime"/>
+        <Class IRI="#PassingTestAttemp"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#email"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#email"/>
+        <Class IRI="#Teacher"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#firstName"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#firstName"/>
+        <Class IRI="#Teacher"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hours"/>
+        <Class IRI="#Lecture"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Teacher"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lastName"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lastName"/>
+        <Class IRI="#Teacher"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lectureNumber"/>
+        <Class IRI="#Lecture"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lemma"/>
+        <Class IRI="#Term"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#link"/>
+        <Class IRI="#ListOfReferences"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#moduleNumber"/>
+        <Class IRI="#Module"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#percentOfComplition"/>
+        <Class IRI="#Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#percentOfTestComplition"/>
+        <Class IRI="#PassingTestAttemp"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#questioNname"/>
+        <Class IRI="#MatchingAnsewer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#questioNname"/>
+        <Class IRI="#MultipleAnswer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#questioNname"/>
+        <Class IRI="#SingleAnswer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#questioNname"/>
+        <Class IRI="#TextAnswer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#questioNname"/>
+        <Class IRI="#TrueOrFalseAnswer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#questionTekst"/>
+        <Class IRI="#MatchingAnsewer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#questionTekst"/>
+        <Class IRI="#MultipleAnswer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#questionTekst"/>
+        <Class IRI="#SingleAnswer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#questionTekst"/>
+        <Class IRI="#TextAnswer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#questionTekst"/>
+        <Class IRI="#TrueOrFalseAnswer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rateValue"/>
+        <Class IRI="#AverageTestTermRate"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rateValue"/>
+        <Class IRI="#TestAttempTermRate"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rightAnswer"/>
+        <Class IRI="#TestElement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#role"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#role"/>
+        <Class IRI="#Teacher"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#successOfTheAttemp"/>
+        <Class IRI="#PassingTestAttemp"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#taskNuber"/>
+        <Class IRI="#PracticeTask"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#termName"/>
+        <Class IRI="#Term"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#timeSpent"/>
+        <Class IRI="#PassingTestAttemp"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#answerTekst"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#courseDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#courseName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dateAndTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#email"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#firstName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hours"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lastName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lectureNumber"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lemma"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#link"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#moduleNumber"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#percentOfComplition"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#percentOfTestComplition"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#questioNname"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#questionTekst"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rateValue"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rightAnswer"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#role"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#successOfTheAttemp"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#taskNuber"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#termName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#testDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#testName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#timeSpent"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#variantNumber"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
